@@ -24,4 +24,4 @@
 + Найдите там ваш `Pull request` и зайдите в него
 + В правом меню найдите `labels` и установите флаг `ready for review`
 + Добавьте BurkovskayaAD в Reviewers и Assignees
-+ **'MISSION DONE!'**
++ **'MISSION DONE!!!'**
