@@ -30,30 +30,39 @@ console.log(typeof userName);
 let a = 1;
 let b = 2;
 let c = "белых медведей";
-a = "1";
+a = String(a);
 b = "2";
-c = "белых медведей";
 let Task4 = a + b + c;
 console.log(Task4);
 
 // 5
 
-let Task5 = доступ;
-let marine = морпех;
-let frost = наледь;
-let reproach = попрек;
-let chopped = рубило;
-let lengthWords = Task5 + marine + frost + reproach + chopped;
+let dostup = "доступ";
+let marine = "морпех";
+let frost = "наледь";
+let reproach = "попрек";
+let chopped = "рубило";
+let lengthWords = (dostup + marine + frost + reproach + chopped).length;
 console.log(lengthWords);
 
 // 6
 
+let nameA = "aaa";
+let nameB = 123;
+let nameC = true;
+let typenameA = typeof nameA;
+let typenameB = typeof nameB;
+let typenameC = typeof nameC;
+console.log(typeof nameA);
+console.log(typeof nameB);
+console.log(typeof nameC);
+
 // 7
 
-let Task7 = prompt("Ваше имя");
+let name = prompt("Ваше имя");
 let age = prompt("Ваши вазраст");
 alert("Как вас зовут");
-console.log(Task7);
+console.log(name);
 console.log(age);
 
 // 8
