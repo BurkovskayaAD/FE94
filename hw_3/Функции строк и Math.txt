@@ -17,7 +17,7 @@ console.log(str.substring(6, 11));
 console.log(str.substring(11, 6));
 console.log(str.substr(11, 6));//с 11 получаем 6 символов
 console.log(str.repeat(2));
-console.log(str.replaceAll("H", "h"));
+console.log(str.replace("H", "h"));
 console.log(str.search("W"));
 console.log(str.toLowerCase().slice(1));
 
