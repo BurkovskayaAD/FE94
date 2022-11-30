@@ -17,7 +17,14 @@ for (let i = 1; i < 20; i++)
     console.log(i);
   }
 
-/* 4 задание -  я его не сделала, так как не поняла суть задачи:( */
+/* 4 задание */
+let key = true;
+let documents = true;
+let pen = true;
+let apple = false;
+let orange = true;
+alert(key && documents && pen && (apple || orange));
+
 /* 5 задание */
 let anything = prompt("Enter any number here");
 if (anything % 5 == 0) {
