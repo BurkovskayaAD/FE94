@@ -1,14 +1,15 @@
 // 1
 
-let a = 10;
-let b = 7;
-let c;
-let d = null;
-console.log(10 > 7);
-console.log(10 < 7);
-console.log((a += b));
-console.log(c);
-console.log(d);
+let a = "true";
+let b = false;
+let c = 17;
+let d = undefined;
+let e = null;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);
 
 // 2
 
@@ -53,6 +54,8 @@ if (userAge < 16) {
   console.log("Можешь выкурить сигаретку, только маме не говори");
 } else if (userAge > 18) {
   console.log("Попей пивка и можешь выкурить сигаретку");
+} else if (userAge <= 18 && userAge >= 16) {
+  console.log("Попей колы и можешь выкурить сигаретку");
 }
 
 // 7
