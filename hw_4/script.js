@@ -93,10 +93,10 @@ let endTask = function(){
         phone = +phone + +kiset;
     };
     if (toGlass === "yes"){
-        phone += +glass;
+        phone = +phone + +glass;
     };
     if (toCharger === "yes"){
-        phone += +charger;
+        phone = +phone + +charger;
     };
     phone = (Math.round((phone*(1 + +nalog))*100))/100;
     alert(`цена вашего телефона с учетом аксессуаров и налогов составила ${phone}$`);
