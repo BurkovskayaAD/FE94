@@ -1,0 +1,30 @@
+let obj = {
+  a: "string",
+  b: 123,
+  c: true,
+  e: 1111
+};
+
+for (let keys in obj) {
+    console.log(obj[keys]);
+}
+
+console.log(obj.hasOwnProperty("a"));
+console.log("a" in obj);
+
+delete obj.e;
+console.log(obj);
+
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
+
+let obj2 = Object.create(obj);
+console.log(obj2);
+console.log("a" in obj2);
+console.log(obj);
+console.log(obj == obj2);
+console.log(obj === obj2);
+console.log(obj2.a);
+obj2.e = 123456;
+console.log(obj2);
