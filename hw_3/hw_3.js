@@ -47,49 +47,49 @@ if (key == true && documents == true && pen == true && (apple == true || orange 
 
 ///////////////////////////////////
 
-// let number = +prompt("Введите число");
+let number = +prompt("Введите число");
 
-// if (number % 5 == 0 && number % 3 == 0) {
-//     console.log("FizBuz");
-// } else if (number % 5 == 0) {
-//     console.log("Fiz");
-// } else if (number % 3 == 0) {
-//     console.log("Buz");
-// }
+if (number % 5 == 0 && number % 3 == 0) {
+    console.log("FizBuz");
+} else if (number % 5 == 0) {
+    console.log("Fiz");
+} else if (number % 3 == 0) {
+    console.log("Buz");
+}
 
 //////////////////////////////////
 
-// let age = +prompt("Введите свой возраст");
-// if (age >= 18) {
-//     console.log ("Попей пивка");
-// } else {
-//     console.log ("Пей колу");
-// }
+let age = +prompt("Введите свой возраст");
+if (age >= 18) {
+    console.log ("Попей пивка");
+} else {
+    console.log ("Пей колу");
+}
 
-// if (age>=16 && age <= 18) {
-//     console.log("Можешь выкурить сигаретку, только маме не говори");
-// }
+if (age>=16 && age <= 18) {
+    console.log("Можешь выкурить сигаретку, только маме не говори");
+}
 
 /////////////////////////////////
 
-// let direction = prompt("Введите направление");
+let direction = prompt("Введите направление");
 
-// switch (direction) {
-//     case "юг":
-//         console.log("на юг пойдешь счастье найдешь");
-//         break;
-//     case "север":
-//         console.log("на север пойдешь много денег найдешь");
-//         break;
-//     case "запад":
-//         console.log("на запад пойдешь верного друга найдешь");
-//         break;
-//     case "восток":
-//         console.log("на восток пойдешь разработчиком станешь");
-//         break;
-//     default:
-//         console.log("Повторите сначала")
-// }
+switch (direction) {
+    case "юг":
+        console.log("на юг пойдешь счастье найдешь");
+        break;
+    case "север":
+        console.log("на север пойдешь много денег найдешь");
+        break;
+    case "запад":
+        console.log("на запад пойдешь верного друга найдешь");
+        break;
+    case "восток":
+        console.log("на восток пойдешь разработчиком станешь");
+        break;
+    default:
+        console.log("Повторите сначала")
+}
 
 //////////////////////////////////
 
@@ -99,7 +99,7 @@ alert("Привет, " + name[0].toUpperCase() + name.substring(1, space).toLowe
 
 //////////////////////////////////
 
-let hashTag = 6;
+let hashTag = +prompt("Введите число");
 
 for (let i = 1; i <= hashTag; i++) {
     console.log("#".repeat(i));
