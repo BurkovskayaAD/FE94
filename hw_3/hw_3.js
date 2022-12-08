@@ -38,7 +38,7 @@ let apple = false;
 let orange = true;
 let sholdGoToWork = false;
 
-if (key == true && documents == true && pen == true && (apple == true || orange == true)) {
+if (key && documents && pen && (apple || orange)) {
     sholdGoToWork = true;
     console.log ("Можно идти на работу");
 } else {
