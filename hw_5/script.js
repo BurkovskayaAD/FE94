@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // ### NORMAL level
 
 // Task 1 💻
@@ -6,12 +6,12 @@
 
 // ********** SOLVE ********************************************
 
-let user={
-    name:'Kate',
-    age:20,
-}
-delete user.name;
-console.log(user.name);
+// let user={
+//     name:'Kate',
+//     age:20,
+// }
+// delete user.name;
+// console.log(user.name);
 
 // Task 2 🖥
 // Создать любой обьект с двумя ключами и любыми значениями в них, а затем проверить есть ли в обьекте определенный ключ и если есть вывести в консоль true
@@ -112,7 +112,6 @@ console.log(user.name);
 
 // ********** SOLVE ********************************************
 
-
 // function converter(obj) {
 //   obj = {};
 //   let gol1 = +prompt("какой счет у первой команды?");
@@ -172,15 +171,17 @@ console.log(user.name);
 // ```javascript
 
 // ************* SOLVEc ********************************************
-//     let student1 = {
-//         name: 'Polina',
-//         age: 27,
-//     }
+// let student1 = {
+//   name: "Polina",
+//   age: 27,
+// };
 
-//     let student2 = {
-//         name: 'Polina',
-//         age: 27,
-//     }
-// student1=student2;
+// let student2 = {
+//   name: "Polina",
+//   age: 27,
+// };
 
-// console.log(student1==student2);
+// function deepEqual(obj1, obj2) {
+//   return JSON.stringify(obj1) === JSON.stringify(obj2);
+// }
+// console.log(deepEqual(student1, student2));
