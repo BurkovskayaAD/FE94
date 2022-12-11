@@ -42,7 +42,7 @@ const cats = ['Gachito', 'Tom', 'Batman'];
 cats.forEach(item => {
     console.log(item);
 })
-
+ 
 ////////////Task 6
 
 const evenNumbers = [2, 4, 6, 8, 10];
@@ -52,12 +52,11 @@ function getNumbers(arrOne, arrTwo) {
     arrOne.forEach(item => {
         arrTwo.push(item)
     })
-
+ 
     return arrTwo
 }
 
 const allNumbers = getNumbers(oddNumbers, evenNumbers);
-
 console.log(allNumbers.indexOf(8));
 console.log(allNumbers);
 
@@ -94,21 +93,23 @@ const matrix = [
     [9092, 22, 45, 90000],
 ];
 
-let sum = 0;
-let count = 0
+function getMean(arr){
+    let sum = 0;
+    let count = 0
 
-for (let i = 0; i < matrix.length; i++) {
-    console.log(matrix[i])
-    for(let j = 0; j < matrix[i].length; j++ ){
-        sum += matrix[i][j]
-        count++
+    for (let i = 0; i < arr.length; i++) {
+        for(let j = 0; j < arr[i].length; j++ ){
+            sum += arr[i][j]
+            count++
+        }
     }
+
+    let resalt = sum / count
+
+    return resalt
 }
 
-let resalt = sum / count
-
-console.log(sum)
-console.log(resalt)
+console.log(getMean(matrix))
 
 ////////////ADVANCED level Task 3
 
@@ -119,13 +120,9 @@ let arrTwo = [];
 for(let value of mixedNumbers){
     if(value >= 0){
         arrOne.push(value)
-    };
-}
-
-for(let value of mixedNumbers){
-    if(value < 0){
-        arrTwo.push(value)
-    };
+    } else {
+         arrTwo.push(value)
+    }
 }
 
 console.log(arrOne);
@@ -136,7 +133,7 @@ console.log(arrTwo);
 let random = [];
 let res = [];
 
-function getRandom(num, max){
+function getRandom(random, res, num, max){
     for(let i = 0; i < num; i++){
         random[i] = Math.floor(Math.random() * max);
         res[i] = random[i] ** 3;
@@ -144,6 +141,6 @@ function getRandom(num, max){
     return res;
 }
 
-getRandom(5, 20);
+getRandom(random, res, 5, 20);
 console.log(random);
 console.log(res);
