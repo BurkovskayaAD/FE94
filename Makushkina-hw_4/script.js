@@ -48,7 +48,16 @@ function getSum(a, b) {
 
 console.log(getSum(-1, 0));
 
-/* 6  задание - не поняла суть задания и что в итоге требуется  */
+/* 6  задание  */
+
+function fooboo(a, foo, boo) {
+  if (a === true) {
+    return foo;
+  } else {
+    return boo;
+  }
+}
+console.log(fooboo(true, "foo", "boo"));
 
 /* 7 задание */
 function triangle(a, b, c) {
