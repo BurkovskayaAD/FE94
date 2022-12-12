@@ -51,9 +51,15 @@ console.log(getSum1(1, 2));
 
 function fooboo(foob, foo, boo) {
   if (foob === true) {
-    return foo;
+    console.log(foo);
   } else {
-    return boo;
+    console.log(boo);
   }
 }
-console.log(fooboo(false, "foo", "boo"));
+function foo() {
+  return "foo";
+}
+function boo() {
+  return "boo";
+}
+fooboo(true, "foo", "boo");
