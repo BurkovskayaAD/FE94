@@ -24,7 +24,7 @@ console.log(string("qwertyuiopasdfghjkl", 2, 6));
 function getSumNumbers(numFour) {
   let n = 0;
   for (i = 0; i <= String(numFour).length; i++) {
-    n = n + numFour[i];
+    n = n + +String(numFour)[i];
   }
   return n;
 }
