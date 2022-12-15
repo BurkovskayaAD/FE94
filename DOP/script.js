@@ -14,8 +14,10 @@ let triplex = function(arr){
         arrNew.sort((a, b) => a - b);
         return arr.indexOf(arrNew[1]);
     }
-}
-console.log(triplex([11, 15, 13]))
+}; 
+let triplex2 = (arr) => arr.indexOf([...arr].sort((a, b) => b - a)[1]);
+console.log(triplex2([11, 15, 13]));
+console.log(triplex([11, 15, 13]));
 
 console.log("");
 console.log("Task 3");
