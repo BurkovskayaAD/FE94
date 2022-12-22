@@ -22,17 +22,17 @@ let trimString = function(str, a, b)
 return str.slice(a, b)
 }
 console.log(trimString("aaaaaaaa", 1, 2))
-// TASK 4 не работает
-let getSumNumbers = function(a)
-{
-let sum = 0
-for (let i = 0; i < String(a).length; i++)
-{
-sum += +String(a)[i]
-}
-return sum
-}
-console.log(getSumNumbers(2021))
+// TASK 4 
+function getSumNumbers(numFour)
+  {
+  let n = 0;
+  for (let i = 0; i < String(numFour).length; i++)
+  {
+  n = n + +String(numFour)[i];
+  }
+  return n;
+  }
+  console.log(getSumNumbers(2021));
   // TASK 5
 function getSum(a, b)
 {
