@@ -1,0 +1,21 @@
+.ram {
+    margin: 10px;
+    border: 1px solid blue;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#del {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.highlight {
+    background-color: pink;
+}

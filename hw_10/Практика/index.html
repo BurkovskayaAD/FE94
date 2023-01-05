@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button id="btn">Click Me!</button>
+
+
+    <form class="ram" onclick="alert('form')">FORM
+        <div class="ram" onclick="alert('div')">DIV
+            <p class="ram" onclick="alert('p')">P</p>
+        </div>
+    </form>
+
+    <div>Всегда можно узнать, на каком конкретно элементе произошло событие.</div>
+    <div>Самый глубокий элемент, который вызывает событие, называется целевым элементом,</div>
+    <div>и он доступен через event.target</div>
+    <div>event.target – это «целевой» элемент, на котором произошло событие, в процессе всплытия он неизменен.</div>
+
+    <div>event.stopPropagation() для прекращения всплытия</div>
+
+    <form class="ram" onclick="alert('form')">FORM
+        <div class="ram" onclick="event.stopPropagation()">DIV
+            <p class="ram" onclick="alert('p')">P</p>
+        </div>
+    </form>
+
+    <div>Делегирование событий</div>
+
+    <div id="main">
+        <div class="1" id="del"></div>
+        <div class="2" id="del"></div>
+        <div class="3" id="del"></div>
+        <div class="4" id="del"></div>
+        <div class="5" id="del"></div>
+        <div class="6" id="del"></div>
+        <div class="7" id="del"></div>
+        <div class="8" id="del"></div>
+    </div>
+
+    <div>Вместо того, чтобы назначать обработчик onclick для каждого класса del (их может быть очень много)</div>
+    <div> – мы повесим «единый» обработчик на класс main и будем использовать event.target.</div>
+
+
+    <form>
+        <input type="checkbox" id="my-checkbox" />
+        <label for="my-checkbox">Checkbox</label>
+    </form>
+
+    <div>Отмена действий по умолчанию - event.preventDefault()</div>
+
+    <form id="add-form">
+        <input id="add-input" type="text">
+        <button id="add">Add</button>
+    </form>
+
+    <div id="arr"></div>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
