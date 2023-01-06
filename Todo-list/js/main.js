@@ -24,11 +24,11 @@ function Todo(){
         
         
         headTop.append(this.headDelNode)
-        this.headDelNode.classList.add('head_del')
+        this.headDelNode.classList.add('head__del')
         this.headDelNode.textContent = 'Delete All'
         
         headTop.append(this.headDelLastNode)
-        this.headDelLastNode.classList.add('head_del-last')
+        this.headDelLastNode.classList.add('head__del-last')
         this.headDelLastNode.textContent = 'Delete Last'
         
         
@@ -39,12 +39,12 @@ function Todo(){
         let headFormText = document.createElement('input')
         headFormText.type = 'text'
         headFormText.placeholder = 'Enter todo ...'
-        headFormText.classList.add('head-form_text')
+        headFormText.classList.add('head-form__text')
         headForm.append(headFormText)
         
         
         headTop.append(this.headAddNode)
-        this.headAddNode.classList.add('head_add')
+        this.headAddNode.classList.add('head__add')
         this.headAddNode.textContent = 'Add'
         
     }
@@ -56,22 +56,22 @@ function Todo(){
         
         let headAll = document.createElement('div')
         headBottom.append(headAll)
-        headAll.classList.add('head_all')
+        headAll.classList.add('head__all')
         headAll.textContent = 'All: 2'
         
         let headCompleted = document.createElement('div')
         headBottom.append(headCompleted)
-        headCompleted.classList.add('head_completed')
+        headCompleted.classList.add('head__completed')
         headCompleted.textContent = 'Completed: 1'
         
         let headShow = document.createElement('div')
         headBottom.append(headShow)
-        headShow.classList.add('head_show')
+        headShow.classList.add('head__show')
         headShow.textContent = 'Show All'
         
         let headShowCompleted = document.createElement('div')
         headBottom.append(headShowCompleted)
-        headShowCompleted.classList.add('head_show')
+        headShowCompleted.classList.add('head__show-completed')
         headShowCompleted.textContent = 'Show Completed'
         
         
@@ -82,7 +82,7 @@ function Todo(){
         let headFormSearchInput = document.createElement('input')
         headFormSearchInput.type = 'search'
         headFormSearchInput.placeholder = 'Search...'
-        headFormSearchInput.classList.add('head-form-search_input')
+        headFormSearchInput.classList.add('head-form-search__input')
         headFormSearch.append(headFormSearchInput)
     }
     this.body = function() {
@@ -103,19 +103,19 @@ function Todo(){
         let bodyFormCheck = document.createElement('input')
         bodyFormCheck.type = 'checkbox'
         bodyFormCheck.id = 'id' + this.couter()
-        bodyFormCheck.classList.add('body-form_check')
+        bodyFormCheck.classList.add('body-form__check')
         bodyForm.append(bodyFormCheck)
         
         let bodyLebel = document.createElement('label')
         bodyLebel.setAttribute('for', bodyFormCheck.id)
         bodyForm.append(bodyLebel)
-        bodyLebel.classList.add('body-form_label')
+        bodyLebel.classList.add('body-form__label')
 
         
         let bodyFormText = document.createElement('input')
         bodyFormText.type = 'text'
         bodyFormText.placeholder = 'Todo text'
-        bodyFormText.classList.add('body-form_text')
+        bodyFormText.classList.add('body-form__text')
         bodyFormText.value = text
         bodyFormText.readOnly = true
         bodyForm.append(bodyFormText)
@@ -127,16 +127,16 @@ function Todo(){
         
         let bodyFormClose = document.createElement('div')
         bodyFormBlock.append(bodyFormClose)
-        bodyFormClose.classList.add('body-form_close')
+        bodyFormClose.classList.add('body-form__close')
         
         let bodyFormImg = document.createElement('img')
         bodyFormClose.append(bodyFormImg)
         bodyFormImg.setAttribute('src', 'images/close.png')
-        bodyFormImg.classList.add('body-form_close-img')
+        bodyFormImg.classList.add('body-form__close-img')
         
         let bodyFormDate = document.createElement('div')
         bodyFormBlock.append(bodyFormDate)
-        bodyFormDate.classList.add('body-form_date')
+        bodyFormDate.classList.add('body-form__date')
         bodyFormDate.textContent = 'Date'
 
         bodyLebel.addEventListener('click', () => {
@@ -151,7 +151,7 @@ function Todo(){
     }
     this.addItems = function() {
         this.headAddNode.addEventListener('click', () => {
-            const text = document.querySelector('.head-form_text').value
+            const text = document.querySelector('.head-form__text').value
             if(text){
                 this.createBodyItem(text)
             }

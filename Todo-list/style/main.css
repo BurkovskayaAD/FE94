@@ -35,7 +35,7 @@ body{
     margin-bottom: 20px;
 }
 
-.head .head-top .head_del{
+.head .head-top .head__del{
     flex-basis: 9%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -45,7 +45,7 @@ body{
     cursor: pointer;
     margin-right: 20px;
 }
-.head .head-top .head_del-last{
+.head .head-top .head__del-last{
     flex-basis: 9%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -58,7 +58,7 @@ body{
     flex-basis: 54%;
     margin: 0px 25px;
 }
-.head .head-top .head-form .head-form_text{
+.head .head-top .head-form .head-form__text{
     width: 100%;
     border: 2px solid #000;
     border-radius: 5px;
@@ -70,12 +70,12 @@ body{
     outline: none;
 }
 
-.head .head-top .head-form .head-form_text::placeholder{
+.head .head-top .head-form .head-form__text::placeholder{
     color: #d5d5d5;
     text-align: center;
 }
 
-.head .head-top .head_add{
+.head .head-top .head__add{
     flex-basis: 9%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -92,17 +92,17 @@ body{
     align-items: center;
 }
 
-.head .head-bottom .head_all{
+.head .head-bottom .head__all{
     flex-basis: 6%;
     margin-right: 20px;
 }
 
-.head .head-bottom .head_completed{
+.head .head-bottom .head__completed{
     flex-basis: 13%;
     margin-right: 20px;
 }
 
-.head .head-bottom .head_show{
+.head .head-bottom .head__show{
     flex-basis: 22%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -113,7 +113,7 @@ body{
     cursor: pointer;
     margin-right: 15px;
 }
-.head .head-bottom .head_show-completed{
+.head .head-bottom .head__show-completed{
     flex-basis: 22%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -127,7 +127,7 @@ body{
 .head .head-bottom .head-form-search {
     flex-basis: 22%;
 }
-.head .head-bottom .head-form-search .head-form-search_input{
+.head .head-bottom .head-form-search .head-form-search__input{
     width: 100%;
     border: 2px solid #000;
     border-radius: 10px;
@@ -139,7 +139,7 @@ body{
     outline: none;
 }
 
-.head .head-bottom .head-form-search .head-form-search_input::placeholder{
+.head .head-bottom .head-form-search .head-form-search__input::placeholder{
     color: #d5d5d5;
     text-align: center;
 }
@@ -167,7 +167,7 @@ body{
 .body .body-form.bg--grey{
     background-color: #929292;
 }
-.body .body-item .body-form .body-form_text{
+.body .body-item .body-form .body-form__text{
     flex-basis: 70%;
     border: 2px solid #000;
     border-radius: 5px;
@@ -179,17 +179,17 @@ body{
     outline: none;
 }
 
-.body .body-item .body-form .body-form_text::placeholder{
+.body .body-item .body-form .body-form__text::placeholder{
     text-align: center;
 }
 
-.body .body-item .body-form .body-form_check {
+.body .body-item .body-form .body-form__check {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.body .body-item .body-form .body-form_check+.body-form_label {
+.body .body-item .body-form .body-form__check+.body-form__label {
     display: inline-flex;
     align-items: center;
     user-select: none;
@@ -197,7 +197,7 @@ body{
 }
  
 
-.body .body-item .body-form .body-form_check+.body-form_label::before {
+.body .body-item .body-form .body-form__check+.body-form__label::before {
     content: '';
     display: inline-block;
     width: 40px;
@@ -213,7 +213,7 @@ body{
     background-color: #18e7cf;
 }
 
-.body .body-item .body-form .body-form_check:checked+.body-form_label::before {
+.body .body-item .body-form .body-form__check:checked+.body-form__label::before {
     border-color: #000;
     background-image: url("../images/check-solid.svg");
 }
@@ -225,7 +225,7 @@ body{
     align-items: flex-end;
 }
 
-.body .body-item .body-form .body-form-block .body-form_close{
+.body .body-item .body-form .body-form-block .body-form__close{
     border: 2px solid #000;
     border-radius: 5px;
     background-color: #18e7cf;
@@ -236,11 +236,11 @@ body{
     width: 15px;
     margin-bottom: 40px;
 }
-.body .body-item .body-form .body-form-block .body-form_close .body-form_close-img{
+.body .body-item .body-form .body-form-block .body-form__close .body-form__close-img{
     width: 100%;
     display: block;
 }
-.body .body-item .body-form .body-form-block .body-form_date{
+.body .body-item .body-form .body-form-block .body-form__date{
     background-color: #fff;
     width: 100%;
     text-align: center;
