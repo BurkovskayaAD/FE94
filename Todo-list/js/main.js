@@ -89,7 +89,7 @@ function Todo(){
         this.todoExtremeNode.append(this.bodyNode)
         this.bodyNode.classList.add('body')
     }
-    this.createBodyItem = function(text) {
+    this.createBodyItem = function(textValue) {
         let bodyItem = document.createElement('div')
         this.bodyNode.append(bodyItem)
         bodyItem.classList.add('body-item')
@@ -116,7 +116,7 @@ function Todo(){
         bodyFormText.type = 'text'
         bodyFormText.placeholder = 'Todo text'
         bodyFormText.classList.add('body-form__text')
-        bodyFormText.value = text
+        bodyFormText.value = textValue
         bodyFormText.readOnly = true
         bodyForm.append(bodyFormText)
         
@@ -137,10 +137,16 @@ function Todo(){
         let bodyFormDate = document.createElement('div')
         bodyFormBlock.append(bodyFormDate)
         bodyFormDate.classList.add('body-form__date')
-        bodyFormDate.textContent = 'Date'
+        bodyFormDate.textContent = new Date().toLocaleDateString()
 
         bodyLebel.addEventListener('click', () => {
             bodyForm.classList.toggle('bg--grey')
+            bodyFormText.classList.toggle('line--through')
+        })
+
+        bodyFormClose.addEventListener('click', () => {
+            let removeItem = document.querySelector('.body-item')
+            removeItem.remove()
         })
     }
     this.couter = function() {
@@ -151,12 +157,13 @@ function Todo(){
     }
     this.addItems = function() {
         this.headAddNode.addEventListener('click', () => {
-            const text = document.querySelector('.head-form__text').value
-            if(text){
-                this.createBodyItem(text)
+            let text = document.querySelector('.head-form__text')
+            let textValue = text.value
+            if(textValue){
+                this.createBodyItem(textValue)
             }
+            text.value = ''
         }) 
-
     }
     this.clearAll = function() {
         let getBodyItem = document.querySelectorAll('.body-item')
@@ -182,6 +189,7 @@ function Todo(){
     }
 
 }
+
 
 let todo = new Todo();
 

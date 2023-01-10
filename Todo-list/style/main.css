@@ -69,7 +69,9 @@ body{
     font-size: 16px;
     outline: none;
 }
-
+.body .body-item .body-form .body-form__text.line--through{
+    text-decoration: line-through;
+}
 .head .head-top .head-form .head-form__text::placeholder{
     color: #d5d5d5;
     text-align: center;
@@ -194,6 +196,7 @@ body{
     align-items: center;
     user-select: none;
     flex-basis: 9%;
+    cursor: pointer;
 }
  
 
@@ -246,6 +249,5 @@ body{
     text-align: center;
     border-radius: 5px;
     padding: 5px 0;
-    cursor: pointer;
 }
 
